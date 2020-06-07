@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/slider_pics/photo1.jpg" class="d-block w-100">
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Stay on top of your bills effortlessly</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/slider_pics/photo2.jpeg" class="d-block w-100">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>living below your income made easy</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/slider_pics/photo3.jpeg" class="d-block w-100">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>          
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="/static/slider_pics/investor.png" class="img-thumbnail mb-4">
+        <h2>All-in-one-finances</h2>
+        <p>Save time and money by keeping track of your finances in one place </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="/static/slider_pics/investor (1).png" class="img-thumbnail mb-4">
+        <h2>Budgets made simple</h2>
+        <p>Easily create budgets, and see our suggestions based on your spending.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="/static/slider_pics/investor (3).png" class="img-thumbnail mb-4">
+        <h2>Unlimited credit scores</h2>
+        <p>Check your free credit score as many times as you like, and get tips to help improve it.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Keep your finances on track. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">By doing this you can easily forecast which months your finances may be tight and which ones you'll have extra money.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="/static/slider_pics/photo8.jpeg" class="d-block w-100">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Stay on top of your bills. <span class="text-muted">You'll be thankful you did.</span></h2>
+        <p class="lead"> Following a budget or spending plan will keep you out of debt or help you work your way out of debt if you are currently in debt.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="/static/slider_pics/photo8.jpeg" class="d-block w-100">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Secure your future. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Making a forecast of your spending for the year can really help you with your long term financial planning.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="/static/slider_pics/photo10.jpeg" class="d-block w-100">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+{% endblock content %}
