@@ -55,6 +55,9 @@
                 <a class="nav-link" href="{{ url_for('dashboard') }}">Dashboard</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('profile') }}">Profile</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
               </li>
             </ul>
@@ -75,7 +78,7 @@
         </div>
       </nav>
     </header>
-    <main role="main">
+    <main role="main" class="container">
       <div class="row">
         <div class="col-lg ">
           {% with messages = get_flashed_messages(with_categories=true) %}
@@ -87,11 +90,11 @@
               {% endfor %}
             {% endif %}
           {% endwith %}
+          {% block content %}
+          {% endblock content %} 
         </div>
       </div>
-      {% block content %}
-      {% endblock content %}
-      
+
     </main>
 
 
